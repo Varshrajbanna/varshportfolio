@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -12,23 +11,32 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  // Scroll to the top when the page loads
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Education />
-      <Projects />
-      <Experience />
-      <Achievements />
-      <Contact />
-      <Footer />
+    <div className="relative min-h-screen">
+      {/* 3D Background Scene */}
+      {/* <div className="fixed inset-0 z-0">
+        <Scene />
+      </div> */}
+
+      {/* Content */}
+      <div className="relative z-10">
+        <div className="bg-white/80 backdrop-blur-sm">
+          <Navbar />
+          <Hero />
+          <About />
+          <Skills />
+          <Education />
+          <Projects />
+          <Experience />
+          <Achievements />
+          <Contact />
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };

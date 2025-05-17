@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -40,49 +39,49 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-portfolio-blue mb-12">Get In Touch</h2>
+        <h2 className="text-3xl font-bold text-center text-white mb-12">Get In Touch</h2>
         
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Information */}
-          <Card className="border-none shadow-lg col-span-1">
+          <Card className="border-none shadow-lg col-span-1 bg-gray-800">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-portfolio-blue mb-6">Contact Information</h3>
+              <h3 className="text-xl font-semibold text-white mb-6">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="p-2 rounded-full bg-blue-100 text-portfolio-blue mr-4">
+                  <div className="p-2 rounded-full bg-blue-700 text-white mr-4">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-gray-800 font-medium">Email</h4>
-                    <a href="mailto:varshrajsingh12@gmail.com" className="text-portfolio-blue hover:underline">
-                      varshrajsingh12@gmail.com
+                    <h4 className="text-white font-medium">Email</h4>
+                    <a href="mailto:varshrajsingh5@gmail.com" className="text-blue-400 hover:underline">
+                      varshrajsingh5@gmail.com
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="p-2 rounded-full bg-blue-100 text-portfolio-blue mr-4">
+                  <div className="p-2 rounded-full bg-blue-700 text-white mr-4">
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-gray-800 font-medium">Phone</h4>
-                    <a href="tel:+919174921968" className="text-portfolio-blue hover:underline">
-                      +91 9174921968
+                    <h4 className="text-white font-medium">Phone</h4>
+                    <a href="tel:+919174821956" className="text-blue-400 hover:underline">
+                      +91 9174821956
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="p-2 rounded-full bg-blue-100 text-portfolio-blue mr-4">
+                  <div className="p-2 rounded-full bg-blue-700 text-white mr-4">
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-gray-800 font-medium">Location</h4>
-                    <p className="text-gray-600">
-                      House No. 156, Gram Sharpur,<br />
+                    <h4 className="text-white font-medium">Location</h4>
+                    <p className="text-gray-400">
+                      House No. 156, Gram Sherpur,<br />
                       District Ratlam, Madhya Pradesh, 457331
                     </p>
                   </div>
@@ -92,14 +91,14 @@ const Contact = () => {
           </Card>
           
           {/* Contact Form */}
-          <Card className="border-none shadow-lg col-span-1 md:col-span-2">
+          <Card className="border-none shadow-lg col-span-1 md:col-span-2 bg-gray-800">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-portfolio-blue mb-6">Send Me a Message</h3>
+              <h3 className="text-xl font-semibold text-white mb-6">Send Me a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-gray-700">Name</label>
+                    <label htmlFor="name" className="text-gray-300">Name</label>
                     <Input 
                       id="name"
                       name="name"
@@ -107,12 +106,12 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Your name"
                       required
-                      className="w-full"
+                      className="w-full bg-gray-700 text-white border-gray-600 placeholder-gray-400"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-gray-700">Email</label>
+                    <label htmlFor="email" className="text-gray-300">Email</label>
                     <Input 
                       id="email"
                       name="email"
@@ -121,13 +120,13 @@ const Contact = () => {
                       placeholder="Your email"
                       type="email"
                       required
-                      className="w-full"
+                      className="w-full bg-gray-700 text-white border-gray-600 placeholder-gray-400"
                     />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-gray-700">Subject</label>
+                  <label htmlFor="subject" className="text-gray-300">Subject</label>
                   <Input 
                     id="subject"
                     name="subject"
@@ -135,12 +134,12 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Subject"
                     required
-                    className="w-full"
+                    className="w-full bg-gray-700 text-white border-gray-600 placeholder-gray-400"
                   />
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-gray-700">Message</label>
+                  <label htmlFor="message" className="text-gray-300">Message</label>
                   <Textarea 
                     id="message"
                     name="message"
@@ -149,13 +148,13 @@ const Contact = () => {
                     placeholder="Your message"
                     required
                     rows={5}
-                    className="w-full resize-none"
+                    className="w-full resize-none bg-gray-700 text-white border-gray-600 placeholder-gray-400"
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
-                  className="bg-portfolio-blue hover:bg-portfolio-hover-blue w-full flex items-center justify-center gap-2"
+                  className="bg-blue-700 hover:bg-blue-600 text-white w-full flex items-center justify-center gap-2"
                 >
                   Send Message <Send className="h-4 w-4" />
                 </Button>

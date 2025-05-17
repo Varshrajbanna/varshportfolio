@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -32,11 +31,11 @@ const Navbar = () => {
     <header 
       className={cn(
         'fixed top-0 left-0 right-0 z-50 px-4 md:px-6 transition-all duration-300', 
-        scrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
+        scrolled ? 'bg-gray-900 shadow-lg py-4' : 'bg-black/30 py-6'
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#" className="text-portfolio-blue text-xl font-bold">
+        <a href="#" className="text-white text-xl font-bold">
           Varshraj Singh
         </a>
 
@@ -46,7 +45,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-gray-700 hover:text-portfolio-blue transition-colors duration-300"
+              className="text-gray-300 hover:text-white hover:underline transition-colors duration-300"
             >
               {link.name}
             </a>
@@ -55,7 +54,7 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden text-gray-300"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
@@ -71,13 +70,13 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white shadow-lg p-4 md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-gray-800 shadow-lg p-4 md:hidden">
             <nav className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-gray-700 hover:text-portfolio-blue transition-colors duration-300"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
