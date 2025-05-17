@@ -10,11 +10,15 @@ Welcome to your Lovable project!
 
 There are several ways of editing your application.
 
+<<<<<<< HEAD
 ### ✅ Use Lovable
 
 Simply visit the [Lovable Project](https://lovable.dev/projects/dfc9f869-9ea1-4edd-8e7d-c2865d38c60c) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
+=======
+
+>>>>>>> ec6ee1f3c87efb9f1b703f790eed816b3c533558
 
 ### 💻 Use your preferred IDE
 
